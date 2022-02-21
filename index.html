@@ -11,6 +11,7 @@
     <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </style>
+    
   </head>
 <body class="w3-light-grey">
 
@@ -25,7 +26,7 @@
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container w3-center">
-          <img src="https://raw.githubusercontent.com/dharamhbtik/dharamhbtik.github.io/main/images/dk14.png" style="width:60%" alt="Avatar">
+          <img src="https://raw.githubusercontent.com/dharamhbtik/dharamhbtik.github.io/main/images/dk15.png" style="width:60%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black" style="display:none">
             
             <h2>Dharmendra Kumar</h2>
@@ -198,7 +199,7 @@
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience <span id="spnExp"></span></h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Consultant / Globallogic</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
@@ -315,6 +316,20 @@ Implementation of proxy server in the college to prevent students from accessing
   <A href="https://twitter.com/updateyourskill"><i class="fa fa-twitter w3-hover-opacity"></i></a>
   <a href="https://linkedin.com/in/kumardh"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
  </footer>
-
+<script type="text/javascript">
+    monthDiff();
+    function monthDiff() {
+    var months;
+    var d2 = new Date();
+    var d1 = new Date("2008-09-28");
+    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth();
+    months += d2.getMonth();
+    var years = months%12;
+    var month = months/12;
+    document.getElementById("spnExp").textContent=" ("+parseInt(month)+" Years and "+ years+" Months)";
+    //return months <= 0 ? 0 : months;
+}
+      </script>
 </body>
 </html>

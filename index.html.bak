@@ -3,6 +3,7 @@
   <head>
     <title>Dharmendra Kumar || Resume</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="https://raw.githubusercontent.com/dharamhbtik/dharamhbtik.github.io/main/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -24,7 +25,7 @@
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container w3-center">
-          <img src="https://raw.githubusercontent.com/dharamhbtik/dharamhbtik.github.io/main/images/dk2.png" style="width:60%" alt="Avatar">
+          <img src="https://raw.githubusercontent.com/dharamhbtik/dharamhbtik.github.io/main/images/dk14.png" style="width:60%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black" style="display:none">
             
             <h2>Dharmendra Kumar</h2>
@@ -73,9 +74,123 @@
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
           </div>
           <br>
+          <p class="w3-large w3-text-theme"><b>
+            <i class="fa fa-book fa-fw w3-margin-right w3-text-teal"></i>Trainings & Certifications</b></p>
+          <ul class="w3-ul w3-border w3-hoverable">
+            <li>
+              Certified CMMI Associate (V 2.0)
+              </li>
+              <li>
+              Microsoft Technology Associate (MTA)
+              </li>
+              <li>
+              ASP.NET Core Razor Pages (.Net 6) - Training
+              </li>
+               <li>
+              Blazor (.Net 6) - Training
+              </li>
+               <li>
+              Kotlin Developer Course - Training
+              </li>
+               <li>
+              Developing Secure Software - Training
+              </li>
+               <li>
+              Gradle Fundamentals - Training
+              </li>
+               <li>
+              Mastering Xamarin Forms - Training
+              </li>
+               <li>
+              Python for C# Developers - Training
+              </li>
+               <li>
+              Google's Go (Golang) - Training
+              </li>
+               <li>
+              Dependancy Injection in C# - Training
+              </li>
+               <li>
+              C# with Windows Froms and SQL - Training
+              </li>
+               <li>
+              C# Advance topics - Training
+              </li>
+               <li>
+              Complete Xamarin Developer course - Training
+              </li>
+               <li>
+              MVVM in Xamarin Forms - Training
+              </li>
+               <li>
+              Mastering Xamarin Forms - Training
+              </li>
+
+            </ul>
+          
+          <br>
+        <p class="w3-large w3-text-theme"><b>
+            <i class="fa fa-android fa-fw w3-margin-right w3-text-teal"></i>Android Apps</b></p>
+          <ul class="w3-ul w3-border w3-hoverable">
+            <li>
+              Alphabets for Kids
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.learnalphabet">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+              <li>
+               Quizzers
+              <a href="https://play.google.com/store/apps/details?id=com.dkumar.quizzers">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+              <li>
+              Github Repo Finder
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.githubrepofinder">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+               <li>
+               Tic Tac Toe Game
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.tictactoe">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+               <li>
+               Pocket Radio
+              <a href="https://play.google.com/store/apps/details?id=com.dkumar.pocketradio">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+               <li>
+               Kids Drawing App
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.kidsdrawing">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+               <li>
+              Xylophone for Kids
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.xylophone">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+               <li>
+               Jokes4You
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.jokes4you">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+               <li>
+               Basic Calculator for Kids
+              <a href="https://play.google.com/store/apps/details?id=com.dkumar.basiccalculator">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+              </a>
+              </li>
+            </ul>
+          
+          <br>
         </div>
       </div><br>
-
     <!-- End Left Column -->
     </div>
 
@@ -87,44 +202,96 @@
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Consultant / Globallogic</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p>
+          <ul><li>	Certified CMMI Associate</li>
+          <li>	Working as a part of SEI (Special Education & Intervention) Team, involved in development of the web application and API that helps schools in USA to manage Specially Abled students and provide better facilities in their daily activities. Application is mainly built using .Net technology and Crystal reports.</li>
+          <li>Helping Project to streamline exiting processes and Involved in implementation of CMMI V2.0 for GlobalLogic
+            </li></ul>
+          </p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Team Lead / Fiserv</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2013 - Sept 2020</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p>
+            <ul>
+<li>
+Worked as a part of the Credit Union Solutions product Galaxy that helps Tellers to perform daily transactions for members and maintain member and employers records. Involved in design, estimation, development, process improvement and review processes.
+</li>
+<li>Introduced a chat bot to cater Admin, Finance, HR, Travel, development, testing, documentation, L1 support and Knowledge transition process related queries at a single which makes everyone life easier by simply asking their queries. It helped to reduce number of emails/calls to respective departments by 30-60% and helped development/testing team to increase productivity by 10-20% 
+</li>
+</ul>
+
+          </p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Software Engineer / CSC (now DXC.Technology)</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2011 - Mar 2013</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          <p>
+        
+<ul>
+<li>
+Worked as a part of base development team of Property & Casualty Domain’s project Agency Link that provides facility to agents to generate/create quotation for specific type of insurance.
+</li>
+<li>Developed dashboard to manage and provide overview of the overall defects received in a release which helps team to analyze defects types and find their root causes and take action to avoid repeating of such defects.
+</li>
+</ul>
+    
+        </p>
 		  <hr>
         </div>
 		<div class="w3-container">
-          <h5 class="w3-opacity"><b>Software Engineer / Patni COmputer Systems</b></h5>
+          <h5 class="w3-opacity"><b>Software Engineer / Patni Computer Systems</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2008 - Jul 2011</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          <p>
+            <ul>
+<li>	Joined as a fresher and involved in a development of financial domain product, which helps customer to manage portfolios and perform cash transfers between accounts. 
+</li>
+<li>Learned Perl which was required in the project for 1 month and completed the extra work which reduces the cost of extra resource.
+</li>
+</ul>
+
+            </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white  w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">
+          <i class="fa fa-tachometer fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Languages and Technologies</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Programming Languages</b></h5>
+           <span>C#, VB.NET, PHP, Kotlin</span>
+            <h5 class="w3-opacity"><b>Mobile Technologies</b></h5>
+           <span>Xamarin Native and Forms (advance), Kotlin (basics) </span>
+            <h5 class="w3-opacity"><b>Operating Systems</b></h5>
+           <span>Windows (7, 8 , 10, 11, Server), Linux ( Ubuntu, Fedora), Mac</span>
+            <h5 class="w3-opacity"><b>Databases</b></h5>
+           <span>Microsoft SQL Server, MySQL</span>
+             <h5 class="w3-opacity"><b>Frameowrks and Tools</b></h5>
+           <span>XAMARIN, ASP.NET, WCF, WebApi, WPF, Windows Forms, Microsoft Visual Studio for Window and Mac, Microsoft Visual Studio Code for Windows, Microsoft SQL Server , CAB, PRISM, Crystal Reports, Telerik Rad Controls for ASP.NET Ajax, Infragistics Ultra Win controls, Android Studio, Gradle</span>
+          	<h5 class="w3-opacity"><b>	Others</b></h5>
+            <span> Team Foundation Server, GitHub, Jira, IIS</span>
+              <br>
         </div>
       </div>
 
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>HBTI Kanpur</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2004 - 2008</h6>
           <p>B.Tech in Computer Science &amp; Engineering</p>
-          <hr>
+          
+         <b> B.TECH. MAJOR PROJECT</b>
+         <ul><li>
+Implementation of proxy server in the college to prevent students from accessing unauthorized websites and monitor internet traffic.</li>
+<li>	Collect and provide analysis of daily internet usage of the students.</li>
+<li>Learned PHP, MYSQL  and used Squid Proxy server to develop and install the system in the college which helped Computer Science department to restrict the over usage of the internet and study the behavior of the students based on the internet browsing history and time spent on the internet.</li></ul>
+<hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Jawahar Navodaya Vidyala</b></h5>
+          <h5 class="w3-opacity"><b>Jawahar Navodaya Vidyalaya</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1996 - 2003</h6>
           <p>Schooling, 6th to 12th class</p><br>
         </div>
