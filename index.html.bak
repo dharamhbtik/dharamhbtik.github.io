@@ -11,6 +11,7 @@
     <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </style>
+    
   </head>
 <body class="w3-light-grey">
 
@@ -25,7 +26,7 @@
     
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container w3-center">
-          <img src="https://raw.githubusercontent.com/dharamhbtik/dharamhbtik.github.io/main/images/dk14.png" style="width:60%" alt="Avatar">
+          <img src="https://raw.githubusercontent.com/dharamhbtik/dharamhbtik.github.io/main/images/dk15.png" style="width:60%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black" style="display:none">
             
             <h2>Dharmendra Kumar</h2>
@@ -130,59 +131,59 @@
           
           <br>
         <p class="w3-large w3-text-theme"><b>
-            <i class="fa fa-android fa-fw w3-margin-right w3-text-teal"></i>Android Apps</b></p>
+            <i class="fa fa-android fa-fw w3-margin-right w3-text-teal"></i>Android Apps <a href="https://play.google.com/store/apps/dev?id=6340508128279205103" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></b></p>
           <ul class="w3-ul w3-border w3-hoverable">
             <li>
               Alphabets for Kids
-              <a href="https://play.google.com/store/apps/details?id=com.dktech.learnalphabet">
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.learnalphabet" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
               <li>
                Quizzers
-              <a href="https://play.google.com/store/apps/details?id=com.dkumar.quizzers">
+              <a href="https://play.google.com/store/apps/details?id=com.dkumar.quizzers" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
               <li>
               Github Repo Finder
-              <a href="https://play.google.com/store/apps/details?id=com.dktech.githubrepofinder">
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.githubrepofinder" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
                <li>
                Tic Tac Toe Game
-              <a href="https://play.google.com/store/apps/details?id=com.dktech.tictactoe">
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.tictactoe" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
                <li>
                Pocket Radio
-              <a href="https://play.google.com/store/apps/details?id=com.dkumar.pocketradio">
+              <a href="https://play.google.com/store/apps/details?id=com.dkumar.pocketradio" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
                <li>
                Kids Drawing App
-              <a href="https://play.google.com/store/apps/details?id=com.dktech.kidsdrawing">
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.kidsdrawing" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
                <li>
               Xylophone for Kids
-              <a href="https://play.google.com/store/apps/details?id=com.dktech.xylophone">
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.xylophone" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
                <li>
                Jokes4You
-              <a href="https://play.google.com/store/apps/details?id=com.dktech.jokes4you">
+              <a href="https://play.google.com/store/apps/details?id=com.dktech.jokes4you" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
                <li>
                Basic Calculator for Kids
-              <a href="https://play.google.com/store/apps/details?id=com.dkumar.basiccalculator">
+              <a href="https://play.google.com/store/apps/details?id=com.dkumar.basiccalculator" target="_blank">
               <i class="fa fa-external-link" aria-hidden="true"></i>
               </a>
               </li>
@@ -198,7 +199,7 @@
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience <span id="spnExp"></span></h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Consultant / Globallogic</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
@@ -314,7 +315,22 @@ Implementation of proxy server in the college to prevent students from accessing
   <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <A href="https://twitter.com/updateyourskill"><i class="fa fa-twitter w3-hover-opacity"></i></a>
   <a href="https://linkedin.com/in/kumardh"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://stackoverflow.com/users/1566041/dharmendra-kumar"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
  </footer>
-
+<script type="text/javascript">
+    monthDiff();
+    function monthDiff() {
+    var months;
+    var d2 = new Date();
+    var d1 = new Date("2008-09-28");
+    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth();
+    months += d2.getMonth();
+    var years = months%12;
+    var month = months/12;
+    document.getElementById("spnExp").textContent=" ("+parseInt(month)+" Years and "+ years+" Months)";
+    //return months <= 0 ? 0 : months;
+}
+      </script>
 </body>
 </html>
