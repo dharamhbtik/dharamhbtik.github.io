@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dharmendra Kumar - Xamarin/.NET MAUI Expert</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     :root {
       --primary: #2D5B84;
@@ -48,6 +49,38 @@
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    /* PDF Download Button */
+    .pdf-download {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .pdf-button {
+      background: white;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .pdf-button:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     /* Header Styles */
@@ -60,6 +93,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
     }
 
     .profile-img {
@@ -415,12 +449,27 @@
         align-items: center;
         gap: 12px;
       }
+
+      .pdf-download {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="resume-container">
+  <div class="resume-container" id="resume">
+    <!-- PDF Download Button -->
+    <div class="pdf-download">
+      <button class="pdf-button" id="downloadPdf">
+        <i class="fas fa-file-pdf"></i> Download PDF
+      </button>
+    </div>
+
     <header class="header">
       <img src="https://avatars.githubusercontent.com/u/8122751?v=4" alt="Dharmendra Kumar" class="profile-img">
       <h1 class="name">Dharmendra Kumar</h1>
@@ -466,8 +515,6 @@
           Blazor (WASM & Server), architecting reusable components and modernizing legacy stacks. Mobile architect for
           enterprise apps with .NET MAUI/Xamarin.</p>
       </div>
-
-
 
       <div class="section">
         <h2 class="section-title"><i class="fas fa-mobile-alt"></i> Published Applications</h2>
@@ -577,6 +624,7 @@
           <li>Mastering Xamarin Forms - Training</li>
         </ul>
       </div>
+
       <div class="section">
         <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
         <div class="card">
@@ -603,6 +651,7 @@
           <p>Percentage: 84.9%</p>
         </div>
       </div>
+
       <div class="section">
         <h2 class="section-title"><i class="fas fa-globe"></i> Languages</h2>
         <div class="card">
@@ -703,7 +752,6 @@
                 current skill.</li>
               <li>Using Udemy and LinkedIn Learning to enhance skill and keeping up to date with the current market
                 trends in technologies.</li>
-             
               <li>Led migration of NDM and Vehicle apps from Xamarin Forms to .NET MAUI, improving performance and
                 maintainability.</li>
             </ul>
@@ -855,6 +903,81 @@
       </p>
     </div>
   </div>
+
+  <script>
+    document.getElementById('downloadPdf').addEventListener('click', function () {
+      // Get the resume element
+      const resume = document.getElementById('resume');
+
+      // Hide the PDF button before generating the PDF
+      const pdfButton = document.querySelector('.pdf-download');
+      pdfButton.style.display = 'none';
+
+      // Create a clone of the resume element to preserve the original
+      const resumeClone = resume.cloneNode(true);
+
+      // Make sure images are loaded before generating PDF
+      const images = resumeClone.getElementsByTagName('img');
+      let imagesLoaded = 0;
+      const totalImages = images.length;
+
+      if (totalImages === 0) {
+        generatePDF(resumeClone);
+        return;
+      }
+
+      // Wait for all images to load
+      for (let i = 0; i < totalImages; i++) {
+        if (images[i].complete) {
+          imagesLoaded++;
+        } else {
+          images[i].onload = function () {
+            imagesLoaded++;
+            if (imagesLoaded === totalImages) {
+              generatePDF(resumeClone);
+            }
+          };
+          // Handle image errors
+          images[i].onerror = function () {
+            imagesLoaded++;
+            if (imagesLoaded === totalImages) {
+              generatePDF(resumeClone);
+            }
+          };
+        }
+      }
+
+      // If all images are already loaded
+      if (imagesLoaded === totalImages) {
+        generatePDF(resumeClone);
+      }
+
+      function generatePDF(element) {
+        // Options for HTML2PDF
+        const options = {
+          margin: 10,
+          filename: 'Dharmendra_Kumar_Resume.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: {
+            scale: 2,
+            useCORS: true,
+            logging: true,
+            backgroundColor: '#FFFFFF'
+          },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        // Generate PDF
+        html2pdf().set(options).from(element).save().then(() => {
+          // Show the PDF button again after generating the PDF
+          pdfButton.style.display = 'block';
+        }).catch(error => {
+          console.error('PDF generation error:', error);
+          pdfButton.style.display = 'block';
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
